@@ -4,7 +4,7 @@
 
 > Người Thực Hiện: Nguyễn Khánh Hào
 
-> Cập Nhật Lần Cuối: 4/10/2024
+> Cập Nhật Lần Cuối: 7/10/2024
 
 # Mục Lục
 
@@ -23,6 +23,8 @@
 [6. About](#6.-abount)
 
 [7. Shopping Cart](#7.-shopping-card)
+
+[Khuyến Nghị Khắc Phục](#khuyen-nghi-khac-phuc)
 
 # Nội Dung
 
@@ -168,3 +170,13 @@ Chúng ta sẽ quăng cái đống vừa copy từ sản phẩm trước vào đ
 ![Screenshot 2024-10-02 213817](https://github.com/user-attachments/assets/86aeb438-639f-44ef-92be-9eb6223e6719)
 
 => solve lab.
+
+# Khuyến Nghị Khắc Phục
+
+1. Xác thực người dùng: Đảm bảo rằng người dùng đã xác thực trước khi truy cập vào tài nguyên. Chỉ cho phép truy cập nếu người dùng có quyền hợp lệ.
+
+2. Phân quyền: Kiểm tra quyền truy cập của người dùng đối với từng tài nguyên. Mỗi khi người dùng yêu cầu một tài nguyên, hãy xác minh rằng họ có quyền truy cập vào tài nguyên đó.
+
+3. Sử dụng tham số ngẫu nhiên: Tránh sử dụng các ID dễ đoán như số nguyên liên tiếp. Thay vào đó, có thể sử dụng UUID hoặc các giá trị ngẫu nhiên.
+
+5. Áp dụng kiểm tra đầu vào: Kiểm tra và xác thực tất cả các tham số đầu vào từ người dùng. Đảm bảo rằng các ID hoặc tham số yêu cầu là hợp lệ và thuộc về người dùng hiện tại.
